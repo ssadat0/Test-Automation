@@ -57,6 +57,7 @@ namespace AutomationTask
             IWebElement outputText = driver.FindElement(By.Id("Email"));
             String output = outputText.GetAttribute("name");
             //Verifying Login Windown Appeared
+            //new git
             Assert.AreEqual(output, "Email");
         }
     }
