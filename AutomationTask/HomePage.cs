@@ -1,8 +1,8 @@
-﻿using System;
-using System.Threading;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System;
+using System.Threading;
 
 
 
@@ -11,14 +11,14 @@ namespace AutomationTask
     public class HomePage
     {
         IWebDriver driver;
-        
+
         public HomePage()
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
         }
 
-        
+
         public void NavigateToHomePage()
         {
             driver.Navigate().GoToUrl("https://dotnetfiddle.net/");

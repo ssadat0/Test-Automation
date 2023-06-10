@@ -1,5 +1,4 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace AutomationTask
 {
@@ -20,7 +19,7 @@ namespace AutomationTask
         public void Test1()
         {
             homePage.ClickOnRunButton();
-            
+
             Assert.AreEqual(homePage.GetStringFromOutput(), expectedOutput);
             Assert.Pass();
         }
